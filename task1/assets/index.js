@@ -13,6 +13,10 @@ button.addEventListener('mouseout', function () {
 
 button.addEventListener('click', calculation);
 
+/*dateInput.addEventListener('focus',function(){
+    message.textContent ="";
+});*/
+
 function calculation() {
     let dateValue = dateInput.value;
     console.log(typeof (dateValue));
