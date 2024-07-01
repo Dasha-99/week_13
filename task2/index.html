@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/normalize.css" />
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="main">
+      <h1 class="main__title">Сервис комментариев со спам фильтром</h1>
+      <section class="input">
+        <h2 class="input__title">Оставьте ваш комментарий</h2>
+        <form action="#" class="form">
+          <div class="form__checbox-container">
+            <p class="form__subtitle">Показывать ваше имя?</p>
+            <label
+              class="form__checkbox-label form__checkbox-label--yes checked form__subtitle"
+              for="yes"
+              >Yes</label
+            >
+            <input
+              class="form__checkbox"
+              type="checkbox"
+              name="name-check"
+              id="yes"
+            />
+            <label
+              class="form__checkbox-label form__checkbox-label--no form__subtitle"
+              for="no"
+              >No</label
+            >
+            <input
+              class="form__checkbox"
+              type="checkbox"
+              name="name-check"
+              id="no"
+            />
+          </div>
+          <p class="form__subtitle form__subtitle--name">
+            Введите Ваше <span class="form__subtitle--bold">Имя</span>
+          </p>
+          <input class="form__info" id="input-name" type="text" />
+          <p class="form__subtitle">
+            Введите ссылку
+            <span class="form__subtitle--bold">вашего аватара</span>
+          </p>
+          <input class="form__info" id="input-url" type="url" />
+          <p class="form__subtitle">Оставьте комментарий</p>
+          <textarea
+            class="form__info form__info--comment"
+            id="input-comment"
+          ></textarea>
+          <button class="form__button">Отправить</button>
+        </form>
+      </section>
+      <section class="chat">
+        <h2 class="chat__title">Чат</h2>
+        <div class="chat__comments-container"></div>
+      </section>
+    </main>
+    <script src="./assets/index.js"></script>
+  </body>
+</html>
